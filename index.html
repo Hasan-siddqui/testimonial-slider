@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>Responsive testimonials section using only HTML & CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="testimonial">
+                <div class="container">
+                    <div class="testimonial__inner">
+                        <div class="testimonial-slider">
+                            <div class="testimonial-slide">
+                                <div class="testimonial_box">
+                                    <div class="testimonial_box-inner">
+                                        <div class="testimonial_box-top">
+                                            <div class="testimonial_box-icon">
+                                                <i class="fas fa-quote-right"></i>
+                                            </div>
+                                            <div class="testimonial_box-text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                                                    optio facilis beatae.</p>
+                                            </div>
+                                            <div class="testimonial_box-img">
+                                                <img src="https://i.ibb.co/hKgs8gm/profile.jpg" alt="profile">
+                                            </div>
+                                            <div class="testimonial_box-name">
+                                                <h4>John Doe</h4>
+                                            </div>
+                                            <div class="testimonial_box-job">
+                                                <p>MANAGER</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-slide">
+                                <div class="testimonial_box">
+                                    <div class="testimonial_box-inner">
+                                        <div class="testimonial_box-top">
+                                            <div class="testimonial_box-icon">
+                                                <i class="fas fa-quote-right"></i>
+                                            </div>
+                                            <div class="testimonial_box-text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                                                    optio facilis beatae.</p>
+                                            </div>
+                                            <div class="testimonial_box-img">
+                                                <img src="https://i.ibb.co/hKgs8gm/profile.jpg" alt="profile">
+                                            </div>
+                                            <div class="testimonial_box-name">
+                                                <h4>John Doe</h4>
+                                            </div>
+                                            <div class="testimonial_box-job">
+                                                <p>CEO</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-slide">
+                                <div class="testimonial_box">
+                                    <div class="testimonial_box-inner">
+                                        <div class="testimonial_box-top">
+                                            <div class="testimonial_box-icon">
+                                                <i class="fas fa-quote-right"></i>
+                                            </div>
+                                            <div class="testimonial_box-text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                                                    optio facilis beatae.</p>
+                                            </div>
+                                            <div class="testimonial_box-img">
+                                                <img src="https://i.ibb.co/hKgs8gm/profile.jpg" alt="profile">
+                                            </div>
+                                            <div class="testimonial_box-name">
+                                                <h4>John Doe</h4>
+                                            </div>
+                                            <div class="testimonial_box-job">
+                                                <p>Co-Founder</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-slide">
+                                <div class="testimonial_box">
+                                    <div class="testimonial_box-inner">
+                                        <div class="testimonial_box-top">
+                                            <div class="testimonial_box-icon">
+                                                <i class="fas fa-quote-right"></i>
+                                            </div>
+                                            <div class="testimonial_box-text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                                                    optio facilis beatae.</p>
+                                            </div>
+                                            <div class="testimonial_box-img">
+                                                <img src="https://i.ibb.co/hKgs8gm/profile.jpg" alt="profile">
+                                            </div>
+                                            <div class="testimonial_box-name">
+                                                <h4>John Doe</h4>
+                                            </div>
+                                            <div class="testimonial_box-job">
+                                                <p>SEO</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.testimonial-slider').slick({
+                autoplay: true,
+                autoplaySpeed: 1000,
+                speed: 600,
+                draggable: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: true,
+                dots: false,
+                responsive: [
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 575,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    }
+                ]
+            });
+        });
+
+    </script>
+</body>
+
+</html>
